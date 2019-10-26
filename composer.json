@@ -1,0 +1,31 @@
+{
+    "name": "paxal/mess-with-ffi",
+    "type": "project",
+    "description": "FFI override function examples",
+    "license": "MIT",
+    "require": {
+        "ext-FFI": "*",
+        "ext-mbstring": "*"
+    },
+    "replace": {
+        "symfony/polyfill-php73": "*",
+        "symfony/polyfill-mbstring": "*"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Paxal\\FFITest\\": "src/"
+        },
+        "files": [
+            "src/ffi/ffi.php",
+            "src/final/no_final.php",
+            "src/functions/override.php",
+            "src/functions/random_int.php"
+        ]
+    },
+    "require-dev": {
+        "symfony/console": "^4.3"
+    }
+}

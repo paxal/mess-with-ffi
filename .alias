@@ -1,0 +1,2 @@
+alias php=php7.4
+alias composer="php $(which composer)"
